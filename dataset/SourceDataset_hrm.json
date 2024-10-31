@@ -1,0 +1,39 @@
+{
+	"name": "SourceDataset_hrm",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "bronzelayerdata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "id",
+				"type": "String"
+			},
+			{
+				"name": "area",
+				"type": "String"
+			},
+			{
+				"name": "calls_made",
+				"type": "String"
+			},
+			{
+				"name": "calls_successful",
+				"type": "String"
+			}
+		]
+	}
+}
