@@ -1,0 +1,22 @@
+{
+	"name": "USDOutput",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "demo"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

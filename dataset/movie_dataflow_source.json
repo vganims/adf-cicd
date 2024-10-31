@@ -1,0 +1,23 @@
+{
+	"name": "movie_dataflow_source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "movies.csv",
+				"container": "demo"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
